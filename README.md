@@ -13,6 +13,6 @@ Uma caixa atende ao pedido quando sua postura é igual ou posterior à data máx
 
 ## Atualizações
 
-Ao abrir o painel pelo endereço publicado, ele verifica `version.json` a cada minuto e quando a aba volta ao primeiro plano. Quando uma versão diferente é publicada, aparece o botão **Nova versão · Atualizar**. O clique carrega a página atualizada. A verificação não ocorre ao abrir um arquivo `file://` diretamente.
+Ao abrir o painel pelo endereço publicado, ele verifica `version.json` a cada minuto e quando a aba volta ao primeiro plano. Quando uma versão diferente é publicada, aparece o botão **Nova versão · Atualizar**. O clique carrega a página atualizada. Ao abrir `index.html` como arquivo local (`file://`), ele consulta a versão publicada no GitHub e oferece o download do novo HTML; depois, abra o arquivo baixado.
 
 Em cada nova publicação, altere `APP_VERSION` no `index.html`, o texto da versão no rodapé e o valor `version` em `version.json` para o mesmo número.
